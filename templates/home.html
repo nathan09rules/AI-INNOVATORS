@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>project 1</title>
+        <style>
+            .inputed {
+                display: block;
+                margin-bottom: 10px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>enter word length 1.1</h1>
+
+        <form id="form">
+            <div id="input_container">
+                <input type="text" id="inputed" class="inputed" placeholder="symptoms" list="symptoms" required>
+                <datalist id="symptoms"></datalist>
+            </div>
+            <button type="button" id="add">add</button>
+            <button type="submit" >submit</button>
+        </form>
+
+        <h2 id="result"> re</h2>
+
+        <script src="/static/script.js"></script>
+    </body>
+</html>
