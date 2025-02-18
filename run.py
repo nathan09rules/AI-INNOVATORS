@@ -9,9 +9,9 @@ import tensorflow as tf
 import numpy as np
 import pandas as pd
 
-model = tf.keras.models.load_model("C:/Users/Nathan/Documents/programing/py'/AI INNOVATORS/static/DIS1_small.keras")
+model = tf.keras.models.load_model("static/DIS1_small.keras")
 
-with open("C:/Users/Nathan/Documents/programing/py'/AI INNOVATORS/static/data.json","r") as file:
+with open("static/data.json","r") as file:
     data = json.load(file)
 
 symptoms = data["symptoms"]
