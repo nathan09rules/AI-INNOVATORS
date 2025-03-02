@@ -1,0 +1,34 @@
+.inputed {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.border {
+    position:fixed;
+    top:0;
+    left: 0;;
+    width: 100vw;
+    height: 100vh;
+    border:5px solid black;
+    box-sizing: border-box;
+    pointer-events: none
+}
+
+.human_body{
+    position: absolute ;
+    top: 80px;
+    right:80px;
+    scale: 1.5;
+}
+
+.shader{
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    pointer-events: none;
+    clip-path: circle(20px at 150vw 50vh);
+    transition: clip-path 0.3s ease-in-out;
+}

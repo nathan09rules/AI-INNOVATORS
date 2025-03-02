@@ -43,5 +43,9 @@ def predict():
 
     return jsonify({"result" : reponse})
 
+@app.route('/symptoms')
+def find_symptoms():
+    return render_template('symptoms.html')
+
 if __name__ == "__main__":
     app.run(debug = True)
