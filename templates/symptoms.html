@@ -8,12 +8,36 @@
     </head>
     <body>
         <h1>YO</h1>
+
+        <h1 id="body_part">body part</h1>
+        <h2 id="info">info</h2>
+
+
+        <img class="human_body" src="static\Printable-Human-Body-Outline-Template-removebg-preview.png" usemap="#bodymap" onclick="body_clicked(event , 'body')">
+
+        <map name="bodymap">
+            <area shape="rect" coords="123,15,213,95" href="#" onclick="body_clicked(event , 'head')">
+            <area shape="rect" coords="112,117,248,365" href="#" onclick="body_clicked(event , 'chest')">
+            <area shape="rect" coords="10,131,343,331" href="#" onclick="body_clicked(event , 'arms')">
+            <area shape="rect" coords="92,358,261,648" href="#" onclick="body_clicked(event , 'legs')">
+        </map>
         
-        <img class="human_body" src="static\human.png">
         <div class="shader"></div>
+        <br><a href="{{url_for('index')}}">now go back</a>
 
-        <a href="{{url_for('index')}}">now go back</a>
+        <form id="search_symp">
+            <input type="text" id="s_symp" placeholder="search symptoms" list="symptoms" required >
+            <datalist id="symptoms"></datalist>
+            <button type="submit">submit</button>
+        </form>
 
+        <h1 style=" padding-top:400px;">SYMPTOMS</h1>
+        
+        <h2>List of all symptoms and their descriptions</h2>
+        <h1 id="phlegm">Phelgm</h1>
+        <h3>Phlegm is the thick, sticky mucus that your body makes, especially when you're sick. It comes from your lungs and throat and is usually clear but can turn yellow, green, or even brown if you have an infection. Your body makes phlegm to trap dust, germs, and other unwanted stuff, helping to keep your lungs clean.</h3>
+        
+        <h1 style="margin-top: 500px;">new</h1>
         <script src="/static/script.js"></script>
     </body>
 </html>

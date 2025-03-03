@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 .inputed {
     display: block;
     margin-bottom: 10px;
@@ -15,20 +19,56 @@
 }
 
 .human_body{
-    position: absolute ;
-    top: 80px;
-    right:80px;
-    scale: 1.5;
+    position: absolute;
+    top:10px;
+    right: 10px;
+    scale: 1;
+}
+
+#info{
+    display: inline-block;
+    white-space: pre;
 }
 
 .shader{
     position:absolute;
+    pointer-events: none;
     top:0;
     left:0;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,1);
     pointer-events: none;
-    clip-path: circle(20px at 150vw 50vh);
+    clip-path: circle(10px at 150vw 50vh);
     transition: clip-path 0.3s ease-in-out;
+}
+
+.debug {
+    position:absolute;
+    background-color: rgba(255,0,0,0.5);
+    border: 2px solid black;
+    pointer-events: none;
+}
+
+area{
+    pointer-events: none;
+}
+
+map {
+    pointer-events: none;
+}
+
+h5{
+    position: absolute;
+   left: 50%;
+   bottom: 10px;
+   transform: translate(-50%);
+}
+
+a{
+    z-index: 10;
+}
+
+h3{
+    padding-right: 30%;
 }
