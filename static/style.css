@@ -1,5 +1,14 @@
 html {
     scroll-behavior: smooth;
+    background-color: #FAEDCA;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.text{
+    color: #234E70;
 }
 
 .inputed {
@@ -43,12 +52,10 @@ html {
     transition: clip-path 0.3s ease-in-out;
 }
 
-.debug {
-    position:absolute;
-    background-color: rgba(255,0,0,0.5);
-    border: 2px solid black;
-    pointer-events: none;
+.page{
+    transition: transform 0.8s ease-in-out;
 }
+
 
 area{
     pointer-events: none;
@@ -66,9 +73,19 @@ h5{
 }
 
 a{
+    color: #7A9BDF;
     z-index: 10;
 }
 
 h3{
     padding-right: 30%;
+    color: black;
+}
+
+.hidden {
+    display: none;
+}
+
+.move_up{
+    transform: translateY(-50px);
 }

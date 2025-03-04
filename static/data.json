@@ -74,6 +74,28 @@
                 "receiving_blood_transfusion", "receiving_unsterile_injections", 
                 "family_history", "extra_marital_contacts"
             ]
+    },
+
+    "age_gender": {
+        "Infant": {
+            "Male": [" continuous_sneezing", " cough", " diarrhoea", " high_fever", " vomiting"],
+            "Female": [" continuous_sneezing", " cough", " diarrhoea", " high_fever", " vomiting"]
+        },
+        "Child": {
+            "Male": ["itching", " skin_rash", " high_fever", " vomiting", " cough"],
+            "Female": ["itching", " skin_rash", " high_fever", " vomiting", " cough"]
+        },
+        "Teen": {
+            "Male": [" acidity", " headache", " muscle_pain", " mood_swings", " anxiety"],
+            "Female": [" acidity", " headache", " muscle_pain", " mood_swings", " abnormal_menstruation"]
+        },
+        "Adult": {
+            "Male": [" back_pain", " joint_pain", " weight_gain", " high_fever", " hypertension"],
+            "Female": [" back_pain", " joint_pain", " weight_gain", " high_fever", " pregnancy_related_issues"]
+        },
+        "Senior": {
+            "Male": [" joint_pain", " breathlessness", " memory_loss", " weakness_in_limbs", " swollen_legs"],
+            "Female": [" joint_pain", " breathlessness", " osteoporosis", " weakness_in_limbs", " swollen_legs"]
+        }
     }
-    
 }
