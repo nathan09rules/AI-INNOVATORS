@@ -1,0 +1,4 @@
+Goals:
+	Create a translate feature
+	Open ai feture
+	
