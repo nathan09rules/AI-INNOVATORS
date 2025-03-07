@@ -28,18 +28,22 @@
 
         <div id="page2" class="page hidden">
             <h1>click on the body</h1>
-            <h2 id="body_part">body part</h2>
+            <h1 id="body_part">body part</h1>
             <h2 id="info">info</h2>
 
 
-            <img class="human_body" src="static\Printable-Human-Body-Outline-Template-removebg-preview.png" usemap="#bodymap" onclick="body_clicked(event , 'body')">
+            <img class="human_body" src="static\Printable-Human-Body-Outline-Template-removebg-preview.png" usemap="#bodymap" onclick="body_clicked(event , 'general')">
 
             <map name="bodymap">
+                <area shape="rect" coords="149,60,202,116" href="#" onclick="body_clicked(event , 'face_and_neck')">
                 <area shape="rect" coords="123,15,213,95" href="#" onclick="body_clicked(event , 'head')">
+                <area shape="rect" coords="101,339,243,384" href="#" onclick="body_clicked(event , 'pelvis')">
+                <area shape="rect" coords="118,265,240,350" href="#" onclick="body_clicked(event , 'intestines')">
+                <area shape="rect" coords="168,238,236,299" href="#" onclick="body_clicked(event , 'stomach')">
                 <area shape="rect" coords="112,117,248,365" href="#" onclick="body_clicked(event , 'chest')">
                 <area shape="rect" coords="10,131,343,331" href="#" onclick="body_clicked(event , 'arms')">
                 <area shape="rect" coords="92,358,261,648" href="#" onclick="body_clicked(event , 'legs')">
-            </map>
+                <area shape="rect" coords="18,317,346,400" href="#" onclick="body_clicked(event , 'hands')">            </map>
             
             <div class="shader"></div>
         </div>

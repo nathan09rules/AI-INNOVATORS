@@ -10,13 +10,9 @@
                 "slurred_speech", "redness_of_eyes", "sinus_pressure", "runny_nose", 
                 "congestion", "loss_of_smell", "red_sore_around_nose"
             ],
-            "face": [
-                "puffy_face_and_eyes", "sunken_eyes", "swelled_lymph_nodes"
-            ],
-            "mouth": [
-                "ulcers_on_tongue", "patches_in_throat", "toxic_look_(typhos)"
-            ],
-            "neck": [
+            "face_and_neck": [
+                "puffy_face_and_eyes", "sunken_eyes", "swelled_lymph_nodes",
+                "ulcers_on_tongue", "patches_in_throat", "toxic_look_(typhos)",
                 "neck_pain", "stiff_neck", "enlarged_thyroid"
             ],
             "chest": [
@@ -32,18 +28,18 @@
                 "diarrhoea", "bloody_stool", "constipation", "pain_during_bowel_movements", 
                 "abdominal_pain", "pain_in_anal_region", "passage_of_gases", "irritation_in_anus"
             ],
-            "bladder": [
+            "pelvis": [
                 "burning_micturition", "bladder_discomfort", "continuous_feel_of_urine", 
                 "spotting_urination", "foul_smell_of_urine", "dark_urine", "yellow_urine", 
-                "polyuria"
+                "polyuria","abnormal_menstruation"
             ],
             "arms": [
                 "weakness_in_limbs", "joint_pain", "muscle_weakness", "bruising", 
-                "swelling_joints", "muscle_pain"
+                "swelling_joints", "muscle_pain","movement_stiffness", "swelling_joints"
             ],
             "legs": [
                 "knee_pain", "swollen_legs", "painful_walking", "prominent_veins_on_calf", 
-                "swollen_extremeties"
+                "swollen_extremeties","movement_stiffness", "hip_joint_pain", "swelling_joints"
             ],
             "skin": [
                 "itching", "skin_rash", "nodal_skin_eruptions", "yellowish_skin", 
@@ -61,14 +57,8 @@
                 "fluid_overload", "malaise", "fast_heart_rate", "irritability", 
                 "mild_fever", "increased_appetite", "visual_disturbances", "depression", "coma"
             ],
-            "bones_joints": [
-                "movement_stiffness", "hip_joint_pain", "swelling_joints"
-            ],
-            "nails": [
+            "hands": [
                 "small_dents_in_nails", "inflammatory_nails", "brittle_nails"
-            ],
-            "reproductive": [
-                "abnormal_menstruation"
             ],
             "medical_history": [
                 "receiving_blood_transfusion", "receiving_unsterile_injections", 

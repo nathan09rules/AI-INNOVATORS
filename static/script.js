@@ -109,16 +109,17 @@ const human = document.querySelector(".human_body");
 const info = document.getElementById("info");
 const part = document.getElementById("body_part");
 
-const human_rect = human.getBoundingClientRect();
-const scaleX = human_rect.width / human.naturalWidth;
-const scaleY = human_rect.height / human.naturalHeight;
 
 function body_clicked(event, body_part) {
+    const human_rect = human.getBoundingClientRect();
+    const scaleX = human_rect.width / human.naturalWidth;
+    const scaleY = human_rect.height / human.naturalHeight;
+
     const x = event.clientX;
     const y = event.clientY;
     shader.style.clipPath = `circle(10px at ${x}px ${y}px)`;
 
-    part.textContent = `${x - human_rect.left} px by ${y - human_rect.top} px`;
+    part.textContent = body_part;
 
     let body_part_symp = symptoms_by_body[body_part] ;
 
